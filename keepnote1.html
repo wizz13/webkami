@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Mono&family=Noto+Serif+JP:wght@200&family=Playfair+Display&family=Rubik+Broken+Fax&family=Single+Day&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keepnote Wisnu & Shofy</title>
+
+    <link rel="stylesheet" href="plugins/styles.css">
+
+    <script defer src="plugins/script.js"></script>
+</head>
+<body> 
+    <div class="loader">
+        <span class="loader__element"></span>
+        <span class="loader__element"></span>
+        <span class="loader__element"></span>
+    </div>
+    
+    <div id="popupContainer">
+        <div id="popupContent">
+            <button id="closePopup"></button>
+            <h2>A Little Note</h2>
+            <p id="note">Hi! kalian boleh baca ini dulu atau klik circle merah itu ya. aku buat ini khusus buat shofy dan kalian pun boleh ikut serta membacanya. 
+              ummmm.... dibagian ini cuma untuk cap janji kita sih hehe... dan aku pengen kita slalu ingat janji kita<br>
+              aku ada sesuatu buat kamu fy klik circle merah ya 💐🫣🩷
+            </p>
+           
+        </div>
+    </div>
+    
+    <button id="musicButton" onclick="initiatePlayback()">🔈</button>
+
+    <div id="heartRateControl">
+        <label for="heartRateSlider">klik icon - atur suara</label>
+        <input id="heartRateSlider" type="range" min="50" max="700" step="5" value="300" onchange="updateHeartRate()">
+    </div>
+
+    <audio id="bgMusic" loop ><source src="assetsnote/bskeepnote.mp3" type="audio/mp3"></audio>
+    <audio id="popSound"><source src="assetsnote/pop.mp3" type="audio/mp3"></audio>
+
+    <div class="click-catcher"></div>
+
+    <header>
+        <h1 class="hero-text"></h1>
+        <p class="quote">Loading quote...</p>
+    </header>
+    
+    <canvas id="waterCanvas"></canvas>
+
+    <p class="love">Wisnu - Shofy</p>
+
+</body>
+</html>

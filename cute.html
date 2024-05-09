@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title id="titleWeb"></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="csscute/mystyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<style>
+  #musicButton, #heartRateControl, #bgMusic, #popSound, .click-catcher {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 11;
+    font-size: 30px;
+    border-style: none;
+    background: transparent;
+    cursor: url('https://cdn.discordapp.com/attachments/1108762577602871346/1190700239171104911/image_2.png?') 5 5, auto;
+    top: 0; /* Posisikan elemen di bagian atas layar */
+}
+
+</style>
+
+<body style="width: 100%; height: 100%;">
+    <div class="box">
+        <ul class="minbox">
+            <li id="min1"></li>
+            <li id="min2"></li>
+            <li id="min3"></li>
+            <li id="min4"></li>
+            <li id="min5"></li>
+            <li id="min6"></li>
+        </ul>
+        <ol class="maxbox">
+            <li id="max1"></li>
+            <li id="max2"></li>
+            <li id="max3"></li>
+            <li id="max4"></li>
+            <li id="max5"></li>
+            <li id="max6"></li>
+        </ol>
+    </div>
+    
+<button id="musicButton">🔈 klik iconnya dong biar ada musik 😝 </button>
+
+<!-- Audio yang akan diputar -->
+<audio id="bgMusic" loop>
+  <source src="assetsnote/bscute.mp3" type="audio/mp3">
+</audio>
+    
+    <script src="audio.js"></script>
+    <script src="config.js"></script>
+    <script src="jscute/main.js"></script>
+</body>
+
+</html>

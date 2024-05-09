@@ -1,10 +1,3 @@
-:root {
-    --background: image-set(url('/bg.webp') type('image/avif'), url('/bg.webp') type('image/webp'));
-    font-weight: 500;
-    line-height: 1.5;
-    font-family: Inter, system-ui, sans-serif;
-}
-
 body {
     margin: 0 auto;
     min-width: 320px;
